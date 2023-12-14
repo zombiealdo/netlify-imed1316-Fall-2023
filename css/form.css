@@ -1,0 +1,32 @@
+.web-form {
+  width: 75%;
+  position: relative;
+  margin: auto;
+  background-color: rgb(187, 187, 187);
+  padding: 30px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.box1 {
+  /* background: #c00; */
+  border-radius: 25px;
+}
+
+.radio,
+.checkbox {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.submit {
+  border-color: var(--secondaryColor) !important;
+  background-color: var(--secondaryColor) !important;
+  color: #ffffff;
+}
+
+.submit:hover {
+  border-color: var(--secondaryColor) !important;
+  background-color: #5b5c5b !important;
+  color: var(--secondaryColor) !important;
+}

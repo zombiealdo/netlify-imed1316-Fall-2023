@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Running Webiste</title>
+
+    <!-- Bootstrap CDN CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Fonts CDN CSS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Google  Fonts CDN Icons-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <!-- Font Awesome CDN CSS-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- FancyApp CDN CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+
+    <!-- AOS CDN CSS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link href="/css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <!-- Navbar begins -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="https://2s4ds6.csb.app/index.html" style="color: white">Film Fusion</a>
+          <button
+            class="navbar-toggler"
+            style="color: white; background-color: white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="https://2s4ds6.csb.app/index.html" style="color: white">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://2s4ds6.csb.app/form.html" style="color: white">Form</a>
+              </li>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://2s4ds6.csb.app/gallery.html"
+                style="color: white"
+                >Gallery</a
+              >
+            </li>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar ends -->
+    </header>
+
+<link rel="stylesheet" href=".\css\form.css" />
+    <main class="web-form">
+      
+      <div class="web-form"></div>
+      <h1>Please enter your information here</h1>
+
+      <form name="web-form" enctype="multipart/form-data" class="needs-validation" novalidate>
+        <div class="row">
+          <!-- Full Name - Text Field-->
+          <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-xl-4 col-xxl-4">
+            <label for="full-name">Full Name</label>
+            <input class="box1" type="text" name="full_name" id="full-name" required />
+            <div class="invalid-feedback">Please add a name.</div>
+          </div>
+
+          <!-- Age - Number Field-->
+          <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-xl-4 col-xxl-4">
+            <label for="age">Age</label>
+            <input
+              type="number"
+              name="age"
+              id="age"
+              required
+              min="16"
+              max="120"
+            />
+            <div class="invalid-feedback">Please add an age.</div>
+          </div>
+
+            <!--email - email field-->
+            <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-xl-4 col-xxl-4">
+                <label for="email">Email</label>
+                <input class="box1" type="email" name="your_email" id="email" required/>
+                <div class="invalid-feedback">Please add an email.</div>
+            </div>
+
+            <!-- phone - tel field-->
+            <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-xl-4 col-xxl-4">
+                <label></label>
+                <label for="phone">Phone (optional)</label>
+                <input class="box1" type="tel" name="phone" id="phone" />
+            </div>
+
+            <!--Social Media - URL field-->
+            <div class="col-12 col-xs-12 col-sm-12 col-md-4 col-xl-4 col-xxl-4">
+              <label for="url">Social Media (optional)</label>
+              <input class="box1" type="url" name="url" id="url" />
+          </div>
+
+          <!-- COMPANY Type - drop-down (select) field-->
+<div class="col-12 col-xs-12 col-sm-12 col-md-6 col-xl-6 col-xxl-6">
+  <lable form="Company">Brand</label>
+  <select name="Brand" id="Brand" required>
+      <option value="def">SELECT BRAND</option>
+      <option value="SY">SONY</option>
+      <option value="NK">NIKON</option>
+      <option value="KD">KODAK</option>
+      <option value="FJ">FUJI</option>
+      <option value="CN">CANON</option>
+      <option value="LX">LUMIX</option>
+      <option value="GP">GO-PRO</option>
+  </select>
+  <div class="invalid-feedback">Please add a company.</div>
+</div>
+
+          <!-- Camera Type - drop-down (select) field-->
+          <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-xl-6 col-xxl-6">
+            <lable form="Camera">Camera Type</label>
+            <select name="Camera" id="Camera" required>
+                <option value="def">SELECT CAMERA TYPE</option>
+                <option value="CC">camcorder</option>
+                <option value="VC">Video Camera</option>
+                <option value="DSLR">DSLR Camera</option>
+                <option value="IC">Instant Cameras</option>
+                <option value="VX">VX</option>
+                <option value="BC">Bridge Camera</option>
+                <option value="COC">Compact Camera</option>
+            </select>
+            <div class="invalid-feedback">Please choose a camera.</div>
+            <!-- <input type="text" 
+            name="custom" 
+            placeholder="Please type a custom size" 
+            required disabled 
+            id="custom" /> -->
+          </div>
+
+          <!-- start date - date field -->
+          <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-xl-6 col-xxl-6">
+            <label for="date">Delivery Date</label>
+            <input class="box1" type="date" name="date" id="date" required/>
+            <div class="invalid-feedback">Please pick a date.</div>
+        </div>
+
+        <!-- Camera Color -->
+        <div>
+          <label for="color">Camera Color</label>
+          <input type="color" name="color" id="color" required/>
+          <div class="invalid-feedback">Please pick a color.</div>
+      </div>
+
+      <!-- Veteran Radio field -->
+      <div>
+        <strong>Are you a US veteran?</strong>
+        <input type="radio" name="veteran" id="veteran-yes" value="Yes" required/>
+        <label>Yes</label>
+        &nbsp; &nbsp;
+        <input type="radio" name="veteran" id="veteran-no" value="No" required/>
+        <label>No</label>
+        <div class="invalid-feedback">Please pick an option.</div>
+    </div>
+
+    <!-- terms and conditions check mark -->
+    <div class="form-check form-switch">
+      <input type="checkbox" id="terms-and-conditions" name="terms" value="Yes" required class="form-check-input"/>
+      <label for="terms-and-conditions">I accept the terms and conditions</label>
+      <div class="invalid-feedback">Please select.</div>
+      <div class="valid-feedback">Thanks!</div>
+    </div>
+
+          <div>
+            <input type="submit" class="submit btn btn-outline-primary"/>
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <footer></footer>
+<!-- <script src="/js/form.js"></script> -->
+    <section>
+      <!-- JavaScripts-->
+      
+      <!-- jQuery CDN JS-->
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+
+      <!-- Boostrap CDN JS -->
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"
+      ></script>
+
+      <!-- Fancy App CDN JS-->
+      <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+      <!-- AOS CDN JS-->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+
+      <!-- Isotope Filtering -->
+      <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+
+      <!--Local JavaScript-->
+      <script src="/js/form.js"></script>
+    </section>
+  </body>
+</html>

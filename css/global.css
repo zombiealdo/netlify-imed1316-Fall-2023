@@ -1,0 +1,16 @@
+/*colors*/
+/* 60% of #46B1EC - Dominant */
+/* 30% of #189DE7 - Secondary */
+/* 10% of #faf9fa- Accent */
+
+:root {
+  --dominantColor: #000000; /* var(--dominantColor) !important; */
+  --secondaryColor: #212222; /* var(--secondaryColor) !important; */
+  --accentColor: #faf9fa; /* accentColor) !important; */
+
+  /*box shadow*/
+  /*cssmatic*/
+  /*shadows.brumm.af*/
+  /* vertical, horizontal, blur, spread, color+opacity */
+  --boxShadow: 0 0 20px 0 rgba(0, 0, 0, 0.35); /* var(--boxShadow) !important; */
+}
